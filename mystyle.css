@@ -14,7 +14,8 @@ body{
   width: 100%;
   height: 100%;
   z-index: 9999;
-  background: url('https://www.ioanaionescu.ro/resources/load.gif') center no-repeat #000;
+  /*background: url('https://www.ioanaionescu.ro/resources/load.gif') center no-repeat #000;*/
+  background: url("resources/load.gif") center no-repeat #000;
   background-size: 90px;    
 }
 
