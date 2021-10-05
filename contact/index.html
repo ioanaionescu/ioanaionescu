@@ -1,12 +1,20 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>IOANA IONESCU</title>
-	<link rel="icon" type="image/png" href="favicon.ico"/>
-	<link rel="stylesheet" type="text/css" href="mystyle.css">
+<html lang="en" class="no-js">
+	<head>
+		
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>IOANA IONESCU</title>
+		<meta name="keywords" content="3d model, three.js, interactive, website, web development" />
+		<meta name="author" content="Codrops" />
+		<link rel="icon" type="image/png" href="favicon.ico"/>
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Schoolbell&display=swap" rel="stylesheet">
 
-</head>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+	</head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
 <script type="text/javascript">
 	
@@ -15,98 +23,19 @@
 		$(".se-pre-con").fadeOut("slow");;
 	});
 </script>
-<body>
-<div class="se-pre-con"></div>
-
-
-	<div class="container">
-		<div class="text">
-
-			 <div class="scene5 scene5--card">
-			        <div class="card5">
-			            <div class="card5__face card5__face--front"></div>
-			            <div class="card5__face card5__face--back"></div>
-			        </div>
-		    </div>
-		    <div class="scene7 scene7--card">
-			        <div class="card7">
-			            <div class="card7__face card7__face--front"></div>
-			            <div class="card7__face card7__face--back"></div>
-			        </div>
-		    </div>
-			<div class="scene scene--card">
-			        <div class="card">
-			            <div class="card__face card__face--front"></div>
-			            <div class="card__face card__face--back"></div>
-			        </div>
-		    </div>
-		    <div class="scene2 scene2--card">
-			        <div class="card2">
-			            <div class="card2__face card2__face--front"></div>
-			            <div class="card2__face card2__face--back"></div>
-			        </div>
-		    </div>
-		     <div class="scene3 scene3--card">
-			        <div class="card3">
-			            <div class="card3__face card3__face--front"></div>
-			            <div class="card3__face card3__face--back"></div>
-			        </div>
-		    </div>
-		    <div class="scene4 scene4--card">
-			        <div class="card4">
-			            <div class="card4__face card4__face--front"></div>
-			            <div class="card4__face card4__face--back"></div>
-			        </div>
-		    </div>
-		    <div class="scene6 scene6--card">
-			        <div class="card6">
-			            <div class="card6__face card6__face--front"></div>
-			            <div class="card6__face card6__face--back"></div>
-			        </div>
-		    </div>
-		    <div class="scene8 scene8--card">
-			        <div class="card8">
-			            <div class="card8__face card8__face--front"></div>
-			            <div class="card8__face card8__face--back"></div>
-			        </div>
-		    </div>
-		    <div class="scene9 scene9--card">
-			        <div class="card9">
-			            <div class="card9__face card9__face--front"></div>
-			            <div class="card9__face card9__face--back"></div>
-			        </div>
-		    </div>
-		    <div class="scene10 scene10--card">
-			        <div class="card10">
-			            <div class="card10__face card10__face--front"></div>
-			            <div class="card10__face card10__face--back"></div>
-			        </div>
-		    </div>
-		    <div class="scene11 scene11--card">
-			        <div class="card11">
-			            <div class="card11__face card11__face--front"></div>
-			            <div class="card11__face card11__face--back"></div>
-			        </div>
-		    </div>
-		    <div class="scene12 scene12--card">
-			        <div class="card12">
-			            <div class="card12__face card12__face--front"></div>
-			            <div class="card12__face card12__face--back"></div>
-			        </div>
-		    </div>
-		    <a href="contact">
-		      <div class="scene13 scene13--card">
-			        <div class="card13">
-				            <div class="card13__face card13__face--front"></div>
-				        </div>
-			    </div>
-			</a>
-		    
-		    
-		   
+	<body>
+	<div class="se-pre-con"></div>
+		<div class="wrapper">
+			<canvas id="c"></canvas>
 		</div>
-	</div>
-<script type="text/javascript" src="script.js"></script>
-</body>
-
+			<h1 class="frame"><a href="../"><img src="https://www.ioanaionescu.ro/contact/res/back.png" style="width: 50%;margin:0 0 0 0; padding: 0 0 0 0;"></a></h1>
+			<h1 class="frame__title"><a href="mailto:ioaana.ionescu@gmail.com" >ioaana.ionescu@gmail.com</a>
+			<a href="tel:0747422364" style="padding-left: 60px; float:right;">0747 422 364</a>
+		</h1>
+		
+	
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/108/three.min.js'></script>
+		<script src='https://cdn.jsdelivr.net/gh/mrdoob/Three.js@r92/examples/js/loaders/GLTFLoader.js'></script>
+		<script  src="js/script.js"></script>
+	</body>
 </html>
