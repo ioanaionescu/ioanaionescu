@@ -212,7 +212,7 @@ body {
   backface-visibility: hidden;
 }
 .card13__face--front {
-  background-image: url("contact/res/back.png");
+  background-image: url("../res/back.png");
   background-size: cover;
 }
 .card13__face--front:hover{
