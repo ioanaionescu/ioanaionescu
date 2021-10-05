@@ -1,0 +1,747 @@
+body { font-family: sans-serif; text-align: center; }
+
+body{
+	margin:0 0 0 0;
+	background-color: black;
+}
+
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url('https://www.ioanaionescu.ro/resources/load.gif') center no-repeat #000;
+  background-size: 90px;    
+}
+
+.a{
+  z-index: 10;
+}
+.container { 
+               
+                position: relative; 
+                width: 100%; 
+                padding-top: 75%; /* 16:9 Aspect Ratio */ 
+            } 
+  
+            .text { 
+                position: absolute; 
+                top: 0; 
+                left: 0; 
+                bottom: 0; 
+                right: 0; 
+                text-align: center; 
+                font-size: 25px; 
+                color: white; 
+            } 
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Piece 1 ----------------------------*/
+.scene {
+  width: 31.42%;
+  float:left;
+  height: 25.03%;
+  margin-bottom: -16vmin;
+  border: 0 ;
+  margin: 0px 0px;
+  perspective: 600px;
+}
+.card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transform-origin: center right;
+  transition: transform 1s;
+}
+
+.card.is-flipped {
+  transform: translateX(-100%) rotateY(-180deg);
+}
+
+.card__face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  line-height: 20vmin;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  backface-visibility: hidden;
+}
+
+.card__face--front {
+  background-image: url("resources/x1.png");
+  background-size: cover;
+}
+.card__face--front:hover{
+    transform: scale(1.02);
+    transition: all ease 500ms;
+    }
+
+.card__face--back {
+  background-image: url("resources/y1.png");
+  background-size: cover;
+  transform: rotateY(180deg);
+}
+
+
+/* Piece 2 ----------------------------*/
+.scene2 {
+  width: 44.897%;
+  float:left;
+  height: 24.52%;
+  margin-bottom: -16vmin;
+  border: 0 ;
+  position: absolute;
+  top:0;
+  left:30%;
+  margin: 0px 0px;
+  perspective: 600px;
+}
+.card2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transform-origin: center right;
+  transition: transform 1s;
+}
+
+.card2.is-flipped {
+  transform: translateX(-100%) rotateY(-180deg);
+}
+
+.card2__face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  line-height: 20vmin;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  backface-visibility: hidden;
+}
+
+.card2__face--front {
+  background-image: url("resources/x2.png");
+  background-size: cover;
+}
+.card2__face--front:hover{
+    transform: scale(1.02);
+    transition: all ease 500ms;
+    }
+.card2__face--back {
+  background-image: url("resources/y2.png");
+  background-size: cover;
+  transform: rotateY(180deg);
+}
+
+
+/* Piece 3 ----------------------------*/
+.scene3 {
+  width: 26.29%;
+  float:left;
+  height: 37.01%;
+  margin-bottom: -16vmin;
+  border: 0 ;
+  position: absolute;
+  top:0;
+  left:73.8%;
+  margin: 0px 0px;
+  perspective: 600px;
+}
+.card3 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transform-origin: center right;
+  transition: transform 1s;
+}
+
+.card3.is-flipped {
+  transform: translateX(-100%) rotateY(-180deg);
+}
+
+.card3__face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  line-height: 20vmin;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  backface-visibility: hidden;
+}
+
+.card3__face--front {
+  background-image: url("resources/x3.png");
+  background-size: cover;
+}
+.card3__face--front:hover{
+    transform: scale(1.02);
+    transition: all ease 500ms;
+    }
+.card3__face--back {
+  background-image: url("resources/y3.png");
+  background-size: cover;
+  transform: rotateY(180deg);
+}
+
+
+/* Piece 4 ----------------------------*/
+.scene4 {
+  width: 11.90%;
+  float:left;
+  height: 7.92%;
+  margin-bottom: -16vmin;
+  border: 0 ;
+  position: absolute;
+  top:14.72%;
+  left:10.65%;
+  margin: 0px 0px;
+  perspective: 600px;
+}
+.card4 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transform-origin: center right;
+  transition: transform 1s;
+}
+
+.card4.is-flipped {
+  transform: translateX(-100%) rotateY(-180deg);
+}
+
+.card4__face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  line-height: 20vmin;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  backface-visibility: hidden;
+}
+
+.card4__face--front {
+  background-image: url("resources/x4.png");
+  background-size: cover;
+}
+.card4__face--front:hover{
+    transform: scale(1.02);
+    transition: all ease 500ms;
+    }
+.card4__face--back {
+  background-image: url("resources/y4.png");
+  background-size: cover;
+  transform: rotateY(180deg);
+}
+
+
+/* Piece 5 ----------------------------*/
+.scene5 {
+  width: 45.678%;
+  float:left;
+  height: 14.68%;
+  margin-bottom: -16vmin;
+  border: 0 ;
+  position: absolute;
+  top:23.7%;
+  left:0.3%;
+  margin: 0px 0px;
+  perspective: 600px;
+}
+.card5 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transform-origin: center right;
+  transition: transform 1s;
+}
+
+.card5.is-flipped {
+  transform: translateX(-100%) rotateY(-180deg);
+}
+
+.card5__face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  line-height: 20vmin;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  backface-visibility: hidden;
+}
+
+.card5__face--front {
+  background-image: url("resources/x5.png");
+  background-size: cover;
+}
+.card5__face--front:hover{
+    transform: scale(1.02);
+    transition: all ease 500ms;
+    }
+.card5__face--back {
+  background-image: url("resources/y5.png");
+  background-size: cover;
+  transform: rotateY(180deg);
+}
+
+
+/* Piece 6 ----------------------------*/
+.scene6 {
+  width: 26.12%;
+  float:left;
+  height: 40.52%;
+  margin-bottom: -16vmin;
+  border: 0 ;
+  position: absolute;
+  top:23%;
+  left: 45.17%;
+  margin: 0px 0px;
+  perspective: 600px;
+}
+.card6 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transform-origin: center right;
+  transition: transform 1s;
+}
+
+.card6.is-flipped {
+  transform: translateX(-100%) rotateY(-180deg);
+}
+
+.card6__face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  line-height: 20vmin;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  backface-visibility: hidden;
+}
+
+.card6__face--front {
+  background-image: url("resources/x6.png");
+  background-size: cover;
+}
+.card6__face--front:hover{
+    transform: scale(1.02);
+    transition: all ease 500ms;
+    }
+.card6__face--back {
+  background-image: url("resources/y6.png");
+  background-size: cover;
+  transform: rotateY(180deg);
+}
+
+/* Piece 7 ----------------------------*/
+.scene7 {
+  width: 9.42%;
+  float:left;
+  height: 40.03%;
+  margin-bottom: -16vmin;
+  border: 0 ;
+  position: absolute;
+  top:23.9%;
+  left: 69.17%;
+  margin: 0px 0px;
+  perspective: 600px;
+}
+.card7 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transform-origin: center right;
+  transition: transform 1s;
+}
+
+.card7.is-flipped {
+  transform: translateX(-100%) rotateY(-180deg);
+}
+
+.card7__face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  line-height: 20vmin;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  backface-visibility: hidden;
+}
+
+.card7__face--front {
+  background-image: url("resources/x7.png");
+  background-size: cover;
+}
+.card7__face--front:hover{
+    transform: scale(1.02);
+    transition: all ease 500ms;
+    }
+.card7__face--back {
+  background-image: url("resources/y7.png");
+  background-size: cover;
+  transform: rotateY(180deg);
+}
+
+/* Piece 8 ----------------------------*/
+.scene8 {
+  width: 21.28%;
+  float:left;
+  height: 64.58%;
+  margin-bottom: -16vmin;
+  border: 0 ;
+  position: absolute;
+  top:35.3%;
+  left: 78.33%;
+  margin: 0px 0px;
+  perspective: 600px;
+}
+.card8 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transform-origin: center right;
+  transition: transform 1s;
+}
+
+.card8.is-flipped {
+  transform: translateX(-100%) rotateY(-180deg);
+}
+
+.card8__face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  line-height: 20vmin;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  backface-visibility: hidden;
+}
+
+.card8__face--front {
+  background-image: url("resources/x8.png");
+  background-size: cover;
+}
+.card8__face--front:hover{
+    transform: scale(1.02);
+    transition: all ease 500ms;
+    }
+
+.card8__face--back {
+  background-image: url("resources/y8.png");
+  background-size: cover;
+  transform: rotateY(180deg);
+}
+
+
+/* Piece 9 ----------------------------*/
+.scene9 {
+  width: 25.68%;
+  float:left;
+  height: 33.98%;
+  margin-bottom: -16vmin;
+  border: 0 ;
+  position: absolute;
+  top:30.5%;
+  left: 0.2%;
+  margin: 0px 0px;
+  perspective: 600px;
+}
+.card9 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transform-origin: center right;
+  transition: transform 1s;
+}
+
+.card9.is-flipped {
+  transform: translateX(-100%) rotateY(-180deg);
+}
+
+.card9__face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  line-height: 20vmin;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  backface-visibility: hidden;
+}
+
+.card9__face--front {
+  background-image: url("resources/x9.png");
+  background-size: cover;
+}
+.card9__face--front:hover{
+    transform: scale(1.02);
+    transition: all ease 500ms;
+    }
+.card9__face--back {
+  background-image: url("resources/y9.png");
+  background-size: cover;
+  transform: rotateY(180deg);
+}
+
+
+
+/* Piece 10 ----------------------------*/
+.scene10 {
+  width: 21.26%;
+  float:left;
+  height: 62.79%;
+  margin-bottom: -16vmin;
+  border: 0 ;
+  position: absolute;
+  top:36.9%;
+  left: 25.25%;
+  margin: 0px 0px;
+  perspective: 600px;
+}
+.card10 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transform-origin: center right;
+  transition: transform 1s;
+}
+
+.card10.is-flipped {
+  transform: translateX(-100%) rotateY(-180deg);
+}
+
+.card10__face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  line-height: 20vmin;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  backface-visibility: hidden;
+}
+
+.card10__face--front {
+  background-image: url("resources/x10.png");
+  background-size: cover;
+}
+.card10__face--front:hover{
+    transform: scale(1.02);
+    transition: all ease 500ms;
+    }
+.card10__face--back {
+  background-image: url("resources/y10.png");
+  background-size: cover;
+  transform: rotateY(180deg);
+}
+
+
+
+/* Piece 11 ----------------------------*/
+.scene11 {
+  width: 25.85%;
+  float:bottom;
+  height: 36.57%;
+  margin-bottom: -16vmin;
+  border: 0 ;
+  position: absolute;
+  top:63.4%;
+  left: 0.2%;
+  margin: 0px 0px;
+  perspective: 600px;
+}
+.card11 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transform-origin: center right;
+  transition: transform 1s;
+}
+
+.card11.is-flipped {
+  transform: translateX(-100%) rotateY(-180deg);
+}
+
+.card11__face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  line-height: 20vmin;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  backface-visibility: hidden;
+}
+
+.card11__face--front {
+  background-image: url("resources/x11.png");
+  background-size: cover;
+}
+.card11__face--front:hover{
+    transform: scale(1.02);
+    transition: all ease 500ms;
+    }
+.card11__face--back {
+  background-image: url("resources/y11.png");
+  background-size: cover;
+  transform: rotateY(180deg);
+}
+
+
+/* Piece 12 ----------------------------*/
+.scene12 {
+  width: 35.30%;
+  float:bottom;
+  height: 37.66%;
+  margin-bottom: -16vmin;
+  border: 0 ;
+  position: absolute;
+  top:62.4%;
+  left: 45.2%;
+  margin: 0px 0px;
+  perspective: 600px;
+}
+.card12 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transform-origin: center right;
+  transition: transform 1s;
+}
+
+.card12.is-flipped {
+  transform: translateX(-100%) rotateY(-180deg);
+}
+
+.card12__face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  line-height: 20vmin;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  backface-visibility: hidden;
+}
+
+.card12__face--front {
+  background-image: url("resources/x12.png");
+  background-size: cover;
+}
+.card12__face--front:hover{
+    transform: scale(1.02);
+    transition: all ease 500ms;
+    }
+.card12__face--back {
+  background-image: url("resources/y12.png");
+  background-size: cover;
+  transform: rotateY(180deg);
+}
+
+/* Piece 13 ----------------------------*/
+.scene13 {
+  width: 10%;
+  float:bottom;
+  height: 7%;
+  margin-bottom: -16vmin;
+  border: 0 ;
+  position: absolute;
+  top:5.3%;
+  left: 80.2%;
+  margin: 0px 0px;
+  perspective: 600px;
+}
+.card13 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transform-origin: center right;
+  transition: transform 1s;
+}
+
+.card13.is-flipped {
+  transform: translateX(-100%) rotateY(-180deg);
+}
+
+.card13__face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  color: white;
+  text-align: center;
+  font-size: 1.6vw;
+  backface-visibility: hidden;
+}
+.card13__face--front {
+  background-image: url("resources/contact.png");
+  background-size: cover;
+}
+.card13__face--front:hover{
+    transform: scale(1.1);
+    transition: all ease 500ms;
+    }
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover 
+{
+     color:#; 
+     text-decoration:none; 
+     cursor:pointer;  
+}
