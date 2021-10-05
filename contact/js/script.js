@@ -17,7 +17,7 @@
 
   function init() {
 
-    const MODEL_PATH = 'https://www.ioanaionescu.ro/contact/res/model.glb';
+    const MODEL_PATH = "contact/res/model.glb";
     const canvas = document.querySelector('#c');
     const backgroundColor = 0x136a;
 
@@ -41,7 +41,7 @@
     camera.position.x = 0;
     camera.position.y = -3;
 
-    let stacy_txt = new THREE.TextureLoader().load('https://www.ioanaionescu.ro/contact/res/texture.jpg');
+    let stacy_txt = new THREE.TextureLoader().load("contact/res/texture.jpg");
     stacy_txt.flipY = false;
 
     const stacy_mtl = new THREE.MeshPhongMaterial({
@@ -110,7 +110,7 @@
 
 
    
-  var texture = new THREE.TextureLoader().load( 'https://www.ioanaionescu.ro/contact/res/bg.jpg' );
+  var texture = new THREE.TextureLoader().load( "contact/res/bg.jpg" );
     
   var geometry = new THREE.PlaneGeometry(44, 33);
   var material = new THREE.MeshPhongMaterial({map: texture, color: 0xFFFFFF});
@@ -125,7 +125,7 @@
   scene.add(ldp);
 
 
-  var texture = new THREE.TextureLoader().load( 'https://www.ioanaionescu.ro/contact/res/table-final.png' );
+  var texture = new THREE.TextureLoader().load( "contact/res/table-final.png" );
     
   var geometry = new THREE.PlaneGeometry(36, 27);
   var material = new THREE.MeshPhongMaterial({map: texture, color: 0xFFFFFF});
