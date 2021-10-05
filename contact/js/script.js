@@ -125,7 +125,7 @@
   scene.add(ldp);
 
 
-  var texture = new THREE.TextureLoader().load( "res/table-final.png" );
+  var texture = new THREE.TextureLoader().load( "res/Table-final.png" );
     
   var geometry = new THREE.PlaneGeometry(36, 27);
   var material = new THREE.MeshPhongMaterial({map: texture, color: 0xFFFFFF});
